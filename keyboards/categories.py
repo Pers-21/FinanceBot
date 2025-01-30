@@ -1,0 +1,48 @@
+from aiogram.utils.keyboard import ReplyKeyboardBuilder
+
+
+def categories_expenses_button():
+    builder_categories = ReplyKeyboardBuilder()
+    builder_categories.button(text="🍔 Еда")
+    builder_categories.button(text="🚗 Транспорт")
+    builder_categories.button(text="🏠 Жилье")
+    builder_categories.button(text="🎉 Развлечения")
+    builder_categories.button(text="🛍️ Покупки")
+    builder_categories.button(text="💊 Здоровье")
+    builder_categories.button(text="📚 Образование")
+    builder_categories.button(text="💡 Коммунальные услуги")
+    builder_categories.button(text="✈️ Путешествия")
+    builder_categories.button(text="🎁 Подарки")
+    builder_categories.button(text="💼 Работа")
+    builder_categories.button(text="💳 Кредиты")
+    builder_categories.button(text="🐶 Домашние животные")
+    builder_categories.button(text="📱 Связь")
+    builder_categories.button(text="👗 Одежда")
+    builder_categories.button(text="🚕 Такси")
+    builder_categories.button(text="🍽️ Рестораны")
+    builder_categories.button(text="🏋️‍♂️ Спорт")
+    builder_categories.button(text="🎮 Игры")
+    builder_categories.button(text="💻 Техника")
+    builder_categories.adjust(2)
+    return builder_categories.as_markup(resize_markup = True)
+
+
+def catogories_income_button():
+    income_button = ReplyKeyboardBuilder()
+    income_button.button(text="💰 Зарплата")
+    income_button.button(text="🎁 Подарки")
+    income_button.button(text="💼 Фриланс")
+    income_button.button(text="🏆 Премия")
+    income_button.button(text="💸 Инвестиции")
+    income_button.button(text="🛠️ Подработка")
+    income_button.button(text="🎓 Стипендия")
+    income_button.button(text="🏡 Аренда")
+    income_button.button(text="📈 Дивиденды")
+    income_button.button(text="💡 Возврат долга")
+    income_button.button(text="📦 Продажа вещей")
+    income_button.button(text="💻 Удаленная работа")
+    income_button.button(text="📱 Продажа гаджетов")
+    income_button.button(text="🚗 Продажа автомобиля")
+    income_button.adjust(2)
+    return income_button.as_markup(resize_markup=True)
+    

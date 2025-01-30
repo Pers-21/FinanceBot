@@ -1,0 +1,5 @@
+/config.py
+/services/utils/data/finance.db
+__pycache__/
+*.pyc
+*.pyos
